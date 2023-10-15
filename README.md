@@ -8,3 +8,5 @@ The dataset contains information about customers, products, orders, warehouses. 
 >
 > 
 > The dataset has been cleansed and processed to create analytic data models for the purpose of analysis.
+
+# Exploratory Data Analysis
