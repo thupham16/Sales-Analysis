@@ -1,5 +1,9 @@
 # RFM Segmentation and Customer Analysis
-Recency, Frequency and Monetary (RFM) is 
+Recency, Frequency and Monetary (RFM) analysis is a technique to gain insights into customer spending patterns and effectively segment them, enable business to determine their target audience and devise tailored marketing campaigns.
+- Recency: how recently a customer purchased a product.
+- Frequency: how often they purchase.
+- Monetary value: how much money they spend.
+>
 This Analysis is a part of Data Warehouse project.
 The project includes: clean raw data, build dim and fact tables, analyze customer and sales.
 >
