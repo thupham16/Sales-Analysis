@@ -4,7 +4,7 @@ Recency, Frequency and Monetary (RFM) analysis is a technique to gain insights i
 - Frequency: how often they purchase.
 - Monetary value: how much money they spend.
 >
-This Analysis is a part of Data Warehouse project.
+This Analysis is performed based on analytic data models, which is a part of Data Warehouse project.
 The project includes: clean raw data, build dim and fact tables, analyze customer and sales.
 >
 # Overview of Dataset: 
