@@ -1,7 +1,7 @@
 # Cohort Analysis & Customer Segmentation with RFM
 
 **Cohort Analysis** is method to group customers based on shared characteristics within a specific timeframe. In cohort analysis, customers are divided into distinct groups or cohorts based on factors such as their acquisition date, behavior, or demographics. By studying these cohorts, businesses can gain insights into customer retention, engagement, and behavior patterns over time.
->In this analysis, customers will be segmented based on the date of their first product purchase, and this segmentation will be performed on a monthly basis.
+>In this analysis, customers will be segmented based on the date of their first product purchase, and this segmentation will be performed on a monthly basis to determine how many of them (%) coming back for the following month in 2013-2016.
 >
 **Recency, Frequency and Monetary (RFM)** analysis is a technique to gain insights into customer spending patterns and effectively segment them, enable business to determine their target audience and devise tailored marketing campaigns.
 - Recency: how recently a customer purchased a product.
