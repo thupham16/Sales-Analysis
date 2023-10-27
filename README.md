@@ -116,5 +116,7 @@ This query result was then connected to Looker Studio to converted into pivot ta
 >
 >![image](https://github.com/thupham16/Analysis/assets/119646834/ea1c5c86-5926-46d5-b6a2-942cf4ad18eb)
 
-
+**Insight**
+>
+**Recommendations**
 
