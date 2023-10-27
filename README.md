@@ -20,11 +20,21 @@ The dataset contains information about customers, products, stock and sales of W
 
 # Exploratory Data Analysis
 1. Cohort Analysis
+- Create Cohort
+   - Sales period: year and month for each single transaction for each customer
+   - Cohort group: year and month of a customer’s first purchase
 ```sql
 WITH fact_sales__source AS (
   SELECT customer_key
     , order_date
   FROM `data-warehouse-course-391316`.`wide_world_importers_dwh`.`fact_sales_order_line`
+)
+
+, fact_sales__transaction AS (
+  SELECT DISTINCT
+    DATE_TRUNC(order_date, MONTH) AS order_month
+    , customer_key
+  FROM fact_sales__source
 )
 
 , fact_sales__first_latest_order_month AS (
@@ -36,13 +46,6 @@ WITH fact_sales__source AS (
   GROUP BY 1
 )
 
-, fact_sales__transaction AS (
-  SELECT DISTINCT
-    DATE_TRUNC(order_date, MONTH) AS order_month
-    , customer_key
-  FROM fact_sales__source
-)
-
 , fact_cohort__cohort_size  as (
   SELECT 
     first_order_month AS cohort_month
@@ -50,7 +53,8 @@ WITH fact_sales__source AS (
   FROM fact_sales__first_latest_order_month
   GROUP BY 1
 )
-
+```
+```sql
 , dim_year_month AS (
   SELECT DISTINCT year_month
   FROM `data-warehouse-course-391316`.`wide_world_importers_dwh`.`dim_date`
