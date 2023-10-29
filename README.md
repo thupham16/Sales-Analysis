@@ -179,6 +179,7 @@ RFM values will be scored and segmented by Percentiles. The score ranges from 1 
   FROM fact_rfm__percentile
 )
 ```
+Create RFM segment and category
 ```sql
 , fact_rfm__segment AS (
   SELECT *
