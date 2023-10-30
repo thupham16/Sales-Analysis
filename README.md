@@ -179,7 +179,11 @@ RFM values will be scored and segmented by Percentiles. The score ranges from 1 
   FROM fact_rfm__percentile
 )
 ```
-Create RFM segment and category
+>
+- Customers who are frequent buyers, have recently shopped and usually are spending a lot of money, they would get a score of 555: Recency (R) – 5, Frequency (F) – 5, Monetary (M) – 5. They are your best customers.
+>
+- On the other hand, customers who spend the least, do almost no buying at all and their last purchase was really long time ago, they will get a score of 111: Recency (R) – 1, Frequency (F) – 1, Monetary (M) – 1.
+Grouping Customers into RFM segment and category
 ```sql
 , fact_rfm__segment AS (
   SELECT *
