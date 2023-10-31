@@ -208,3 +208,6 @@ Grouping Customers into RFM segment and category
     END AS rfm_category
   FROM fact_rfm__segment
 ```
+> ![image](https://github.com/thupham16/Analysis/assets/119646834/d2d334fd-dede-4ad1-8be9-d3861702218b)
+
+
