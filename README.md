@@ -119,7 +119,7 @@ This query result was then connected to Looker Studio to converted into pivot ta
 **2. RFM Analysis**
 
 **Recency, Frequency and Monetary (RFM)** analysis is a technique to gain insights into customer spending patterns and effectively segment them, enable business to determine their target audience and devise tailored marketing campaigns.
-- Recency: how recently a customer purchased a product, by subtracting the date of the latest order date from the date of the analysis. Since recency is calculated for a point in time and the dataset last order date is May 31 2016, we will set the 1 day after to calculate recency. The more recently a customer has shopped, the more likely they are to keep your company in mind for future purchases.
+- Recency: how recently a customer purchased a product, by subtracting the date of the latest order date from the date of the analysis. The more recently a customer has shopped, the more likely they are to keep your company in mind for future purchases.
 - Frequency: total number of purchases - indicate how often a customer purchase to predict when they will comback or to remind customers of their needs.
 - Monetary value: to calculate how much money they spend, that help company to identify customer who spend the most versus relatively small amounts.
 >
@@ -129,7 +129,7 @@ WITH fact_rfm__summary AS (
   SELECT 
     customer_key
     , MAX(order_date) AS last_active_date
-    , DATE_DIFF('2016-06-1', MAX(order_date), MONTH) AS recency
+    , DATE_DIFF('2016-06-1', MAX(order_date), MONTH) AS recency --Since recency is calculated for a point in time and the dataset last order date is May 31 2016, we will set the 1 day after to calculate recency. 
     , COUNT (DISTINCT sales_order_key) AS frequency
     , SUM(gross_amount) AS monetary
   FROM `data-warehouse-course-391316`.`wide_world_importers_dwh`.`fact_sales_order_line`
