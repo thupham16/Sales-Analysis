@@ -10,6 +10,11 @@ The dataset contains information about customers, products, stock and sales of W
 >
 - SQL Bigquery
 - Looker Studio
+
+# Output
+- Data Modelling
+- Visualization
+- Insight and Recommendations
 # Cohort Analysis & Customer Segmentation with RFM
 
 **Cohort Analysis** is method to group customers based on shared characteristics within a specific timeframe. In cohort analysis, customers are divided into distinct groups or cohorts based on factors such as their acquisition date, behavior, or demographics. By studying these cohorts, businesses can gain insights into customer retention, engagement, and behavior patterns over time.
