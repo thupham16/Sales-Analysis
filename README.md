@@ -12,6 +12,7 @@ The dataset contains information about customers, products, stock and sales of W
 - Looker Studio
 
 # Output
+- Cleansed Data
 - Data Modelling
 - Visualization
 - Insight and Recommendations
