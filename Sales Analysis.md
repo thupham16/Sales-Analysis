@@ -112,9 +112,16 @@ Grouping Customers into RFM segment and category
   FROM fact_rfm__segment
 ```
 **Table Result**
+>
 ![image](https://github.com/thupham16/Analysis/assets/119646834/75fedc94-74d7-4cbd-af8f-713f0e583b4d)
 
+![image](https://github.com/thupham16/Analysis/assets/119646834/3a0d5c88-e062-4596-8a1f-a7cacdfb942e)
 
-> ![image](https://github.com/thupham16/Analysis/assets/119646834/b32a6660-2f2b-4420-b789-30eff2ba2ad8)
 
-
+**Insight**
+>
+Drawing insights from customer shopping behavior between the years 2013 - 2016, I have formulated key findings:
+- The top three customer segments, namely At Risk, Hibernating and Recent Customer account for approximately 50% of the total customer base.
+- At Risk, Hibernating, Loyal Customer and Champion categories bring the most revenue over the given period.
+>
+**Recommendation**
