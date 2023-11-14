@@ -123,5 +123,7 @@ Grouping Customers into RFM segment and category
 Drawing insights from customer shopping behavior between the years 2013 - 2016, I have formulated key findings:
 - The top three customer segments, namely At Risk, Hibernating and Recent Customer account for approximately 50% of the total customer base.
 - At Risk, Hibernating, Loyal Customer and Champion categories bring the most revenue over the given period.
+- Focus on some segments that can be critically important for effective marketing strategies:
+  - High spending: Champion, Loyal Customer, Can't Loose Them, Customers Needing Attention - those have made their purchase within the last week and generate an average turnover of more than 300k 
 >
 **Recommendation**
