@@ -1,3 +1,7 @@
+# Business Requirements
+- Managers want to have a comprehensive overview dashboard that tracks month over month sales performance. This dashboard aims to monitor target achievement of salesman, as well as identify top products and customers within the sales data.
+- Moreover, the business aims to develop customer-oriented strategies for implementing targeted marketing activities based on customer segments. To achieve this, RFM analysis will be conducted to divide customers into segments and gain a deeper understanding of their purchasing habits.
+  
 # Data Cleaning and Transformation
 >
 I will create necessary data model for doing analysis and use SQL to cleanse and tranform the data.
