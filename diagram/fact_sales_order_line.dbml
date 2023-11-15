@@ -1,0 +1,90 @@
+Table dim_product {
+  product_key integer [pk]
+  product_name text
+  is_chiller_stock text
+  lead_time_days int
+  quantity_per_outer int
+  brand_name text
+  supplier_key int
+  supplier_name text
+  color_key int
+  color_name text
+  unit_package_type_key int
+  unit_package_type_name text
+  outer_package_type_key int
+  outer_package_type_name text
+  category_key int
+}
+
+Table dim_customer {
+  customer_key integer [primary key]
+  customer_name text
+  bill_to_customer_key integer
+  bill_to_customer_name text
+  is_statement_sent text
+  is_on_credit_hold text
+  payment_days integer
+  standard_discount_percentage int
+  credit_limit integer
+  customer_category_key integer
+  customer_category_name text
+  buying_group_key integer
+  buying_group_name text
+  delivery_method_key integer
+  delivery_method_name text
+  delivery_city_key integer
+  delivery_city_name text
+  state_province_key integer
+  delivery_state_name text
+  account_opened_date date
+  primary_contact_person_key integer
+  primary_contact_full_name text
+
+}
+
+Table dim_date {
+  date [pk]
+  day_of_week text
+  day_of_week_short text
+  is_weekday_or_weekend text
+  year_month date
+  month date
+  year date
+  year_number int
+}
+
+Table dim_person {
+  person_key integer [pk]
+  full_name text
+  search_name text
+  is_system_user text
+  is_employee text
+  is_salesperson text
+  is_permitted_to_logon text
+}
+
+Table dim_sales_order_line_indicator {
+  sales_order_line_indicator_key int [pk]
+  is_undersupply_backordered text
+  package_type_key int
+  package_type_name text
+}
+
+Table fact_sales_order_line {
+sales_order_line_key int [pk]
+sales_order_key int
+product_key int [ref: > dim_product.product_key]
+picked_by_person_key int [ref: > dim_person.person_key]
+salesperson_person_key int [ref: > dim_person.person_key]
+customer_key int [ref: > dim_customer.customer_key]
+quantity int
+unit_price numeric
+gross_amount numeric
+tax_rate numeric
+picked_quantity int
+picking_completed_when date
+order_date date [ref: > dim_date.date]
+expected_delivery_date date [ref: > dim_date.date]
+backorder_order_key int
+sales_order_indicator_key int [ref: > dim_sales_order_line_indicator.sales_order_line_indicator_key]
+}

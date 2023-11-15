@@ -1,0 +1,65 @@
+Table dim_product {
+  product_key integer [pk]
+  product_name text
+  is_chiller_stock text
+  lead_time_days int
+  quantity_per_outer int
+  brand_name text
+  supplier_key int
+  supplier_name text
+  color_key int
+  color_name text
+  unit_package_type_key int
+  unit_package_type_name text
+  outer_package_type_key int
+  outer_package_type_name text
+  category_key int
+}
+
+Table dim_date {
+  date [pk]
+  day_of_week text
+  day_of_week_short text
+  is_weekday_or_weekend text
+  year_month date
+  month date
+  year date
+  year_number int
+}
+
+Table dim_contact_person {
+  contact_person_key integer [pk]
+  contact_person_full_name text
+  contact_person_search_name text
+}
+
+Table dim_supplier {
+  supplier_key integer [pk]
+  supplier_name text
+  supplier_category_key text
+  supplier_category_name text
+}
+
+Table dim_purchase_order_line_indicator {
+  purchase_order_line_indicator_key int [pk]
+  is_order_line_finalized text
+  is_order_finalized text
+  package_type_key int
+  package_type_name text
+  delivery_method_key int
+  delivery_method_name text
+}
+
+Table fact_purchase_order_line {
+purchase_order_line_key int [pk]
+purchase_order_key int
+purchase_order_line_indicator_key int [ref: > dim_purchase_order_line_indicator.purchase_order_line_indicator_key]
+product_key int [ref: > dim_product.product_key]
+contact_person_key int [ref: > dim_contact_person.contact_person_key]
+supplier_key int [ref: > dim_supplier.supplier_key]
+ordered_outers int
+received_outers int
+expected_unit_price_per_outer int
+order_date date [ref: > dim_date.date]
+expected_delivery_date date [ref: > dim_date.date]
+}
