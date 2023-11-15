@@ -129,10 +129,10 @@ Drawing insights from customer shopping behavior between the years 2013 - 2016, 
 - At Risk, Hibernating, Loyal Customer and Champion categories generate the most revenue over the given period.
 >
 => Focus on these existing customers of those groups to increase revenue:
-  - Champion: this segment generates the highest revenue and makes the most recent purchases, but constitute only 10% of the total customer base => customers of this segment spend frequently and easily adopt for new products so we should reward to motivate them to promote our brand and cross-sales to increase revenue.
+  - Champion: this segment generates the highest revenue and makes the most recent purchases, but constitute only 10% of the total customer base => customers of this segment spend frequently and easily adopt for new products so we should offer special rewards as bonus for loyalty card, personalized recommendations based on history purchases and cross-sales to increase revenue.
   - Loyal Customer: this segment spend good money with us often, to ensure customer loyalty sustainable and convert them into champion group, we can apply upsell higher-value products and engage customers with their expectations and needs.
   - Can't Loose them: Customers of this segment have a higher transaction frequency, even though their spending amounts are close to the loyal customer segment. However, since these customers are nearly lost customers that made last purchases nearly a months ago - we need to win them back via renewals or newer products, don’t lose them to competition, talk to them.
-  - At Risk: this segment accounts for the major of total customer, over 17%, consist of those spend big money and purchase often; but haven't made purchase within 3 weeks - we need to bring them back by sending personalized emails to reconnect and offer special deals.
+  - At Risk: this segment accounts for the major of total customer, over 17%, consist of those spend big money and purchase often; but haven't made purchase within 3 weeks - we need to understand why they have stopped making purchases - because of product quality or alternatives from competitors,... - then design appropriate plan. 
 >
 => Focus on these groups to enhance engagement with customers:
   - Customers Needing Attention: Above average recency, frequency, and monetary values. May not have bought it very recently though - Reactivate them by making limitedtime offers as cashback or bonus, and recommend based on past purchases. 
