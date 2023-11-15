@@ -134,7 +134,7 @@ Drawing insights from customer shopping behavior between the years 2013 - 2016, 
   - Can't Loose them: Customers of this segment have a higher transaction frequency, even though their spending amounts are close to the loyal customer segment. However, since these customers are nearly lost customers that made last purchases nearly a months ago - we need to win them back via renewals or newer products, don’t lose them to competition, talk to them.
   - At Risk: this segment accounts for the major of total customer, over 17%, consist of those spend big money and purchase often; but haven't made purchase within 3 weeks - we need to bring them back by sending personalized emails to reconnect and offer special deals.
 >
-=> Focus on these groups to increase engagement with customers:
+=> Focus on these groups to enhance engagement with customers:
   - Customers Needing Attention: Above average recency, frequency, and monetary values. May not have bought it very recently though - Reactivate them by making limitedtime offers as cashback or bonus, and recommend based on past purchases. 
   - Recent Customer: Those bought most recently, but not often.	Provide onboarding support, give them early success, and start building relationships.
   - Hibernating: These customers are characterized by infrequent and low-value purchases made a long time ago. However, they constitute nearly 15% of the total customer base. While this group does not require immediate prioritization, we can enhance the brand value by offering other relevant products and special discounts.
